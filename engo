@@ -316,13 +316,6 @@ runFunction(function()
 		Default = 0
 	})
 end)
-
-	local flyAllowedmodules = {"Killaura", "Sprint", "AutoClicker", "AutoReport", "AutoReportV2", "AutoRelic", "AimAssist", "AutoLeave"}
-	local function autoLeaveAdded(plr)
-		task.spawn(function()
-			if not shared.EngoFullyLoaded then
-				repeat task.wait() until shared.EngoFullyLoaded
-			end
 			if getRole(plr) >= 100 then
 				if AutoLeaveStaff.Enabled then
 					if AutoLeaveStaff2.Enabled then 
@@ -612,14 +605,7 @@ runFunction(function()
 		Default = 0
 	})
 end)
-
-	local flyAllowedmodules = {"Killaura", "Sprint", "AutoClicker", "AutoReport", "AutoReportV2", "AutoRelic", "AimAssist", "AutoLeave"}
-	local function autoLeaveAdded(plr)
-		task.spawn(function()
-			if not shared.EngoFullyLoaded then
-				repeat task.wait() until shared.EngoFullyLoaded
-			end
-			if getRole(plr) >= 100 then
+ getRole(plr) >= 100 then
 				if AutoLeaveStaff.Enabled then
 					if AutoLeaveStaff2.Enabled then 
 						warningNotification("engo", "Staff here : "..(plr.DisplayName and plr.DisplayName.." ("..plr.Name..")" or plr.Name).." : Play legit like nothing happened to have the highest chance of not getting banned.", 60)
