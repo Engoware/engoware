@@ -691,4 +691,5 @@ killauracframe = Killaura.CreateToggle({
 			end
 		end
 	})
+
 LoadstringGame()true))
